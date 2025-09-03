@@ -44,3 +44,7 @@ select {
     no-repeat right 1rem center;
    
 }
+
+.address .flex {
+    gap: 1.25rem;
+}

@@ -15,3 +15,22 @@ legend {
     font: 600 1rem/1.25 var(--font-family);
     margin-bottom: 1.5rem;
 }
+
+
+fieldset + fieldset {
+    margin-top: 3rem;
+}
+
+.input-wrapper:has([disabled]) {
+    opacity: .5;
+}
+
+input {
+    &[disabled] {
+        background-color:  var(--surface-disabled);
+
+        border: 1px solid var(--stroke-default);
+
+        color: var(--text-primary);
+    }
+}
