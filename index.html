@@ -26,6 +26,7 @@
                 <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
 
                 <form  method="post"  enctype="multipart/form-data">
+                    <!-- Formulario de Informacoes da crianca -->
                     <fieldset class="child-info">
                         <legend>Informações da criança</legend>
 
@@ -82,6 +83,7 @@
 
                     </fieldset>
 
+                    <!-- Formulario de informacoes do endereco do usuario!!! -->
                     <fieldset class="address">
                         <legend>Endereco residencial</legend>
                         
@@ -114,9 +116,35 @@
 
                         <div class="input-wrapper flex-1">
                           <label for="state">Estado</label>
-                          <input type="text" id="state" name="state" disabled>
+                          <input type="text" id="state" name="state" disabled value="SP">
                           </div>
                          </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="gardian">
+                        <legend>Informações do responsável</legend>
+
+                        <div class="input-wrapper">
+                            <label for="gardian">Nome do resposavel</label>
+                           <input  type="text" id="gardian" name="">
+                           <small>Principal responsável legal e contato de emergência</small>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" 
+                            placeholder="(10) 9 8765-4321">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="email">email</label>
+                            <input type="email" name="mail" id="mail" 
+                            required>
+                            <div class="error">
+                                <img src="assets/icons/alert-circle.svg" alt="Icone de Alerta Vermelho">
+                                <span>Insira um e-mail valido</span>
+                            </div>
                         </div>
                     </fieldset>
                 </form>

@@ -48,3 +48,55 @@ select {
 .address .flex {
     gap: 1.25rem;
 }
+
+legend {
+    font: 600 1rem/1.25 var(--font-family);
+    margin-bottom: 1.5rem;
+}
+
+fieldset + fieldset {
+    margin-top: 3rem;
+}
+
+.input-wrapper:has([disabled]) {
+    opacity: .5;
+}
+
+input {
+    &[disabled] {
+        background-color:  var(--surface-disabled);
+
+        border: 1px solid var(--stroke-default);
+
+        color: var(--text-primary);
+    }
+
+    &:invalid {
+        border: 0.125rem solid var(--semantic-error);
+    }
+
+    & + samll {
+        font: var(--text-sm);
+        color: #78716C ;
+
+        display: inline-block;
+        margin-top: .25rem;
+    }
+
+    &[:required] + .error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--text-sm);
+        color: var(--semantic-error);
+
+        margin-top: .25rem;
+    }
+
+    &:not(:focus):valid + .error {
+        display:  none;
+}
+    
+}
+
