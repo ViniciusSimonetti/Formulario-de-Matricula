@@ -34,3 +34,9 @@ input {
         color: var(--text-primary);
     }
 }
+
+.actions-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    gap: 1rem; 
+}
